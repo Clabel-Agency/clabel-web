@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>clabel — Marketing Agency</title>
+  <meta name="description" content="clabel es una agencia de marketing internacional. Estrategia, branding, contenido y performance para marcas en español e inglés.">
+  <meta name="theme-color" content="#F4D2DA">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__logo"><img src="assets/logo-green.png" alt=""></div>
+    <div class="loader__count"><span id="loaderCount">0</span>%</div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label" data-i18n="cursor.view">Ver</span></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="clabel — inicio"><img src="assets/logo-green.png" alt="clabel"></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#proceso" data-i18n="nav.process">Proceso</a>
+      <a href="#trabajos" data-i18n="nav.work">Trabajos</a>
+      <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button class="lang__btn is-active" data-lang="es">ES</button>
+        <button class="lang__btn" data-lang="en">EN</button>
+        <span class="lang__pill" aria-hidden="true"></span>
+      </div>
+      <a href="#contacto" class="btn btn--dark btn--sm magnetic nav__cta"><span data-i18n="nav.cta">Hablemos</span></a>
+      <button class="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="menu" aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#servicios"><span data-i18n="nav.services">Servicios</span></a>
+      <a href="#proceso"><span data-i18n="nav.process">Proceso</span></a>
+      <a href="#trabajos"><span data-i18n="nav.work">Trabajos</span></a>
+      <a href="#nosotros"><span data-i18n="nav.about">Nosotros</span></a>
+      <a href="#contacto"><span data-i18n="nav.cta">Hablemos</span></a>
+    </nav>
+    <p class="menu__foot">hola@clabel.agency</p>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__blobs" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+      </div>
+
+      <p class="eyebrow hero__eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Agencia de marketing · ES / EN</span></p>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="line__inner" data-i18n="hero.l1">Hacemos marcas</span></span>
+        <span class="line"><span class="line__inner" data-i18n="hero.l2">que la gente</span></span>
+        <span class="line line--accent"><span class="line__inner"><span class="rotator" id="rotator"><span class="rotator__word">recuerda.</span></span></span></span>
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__lead" data-i18n="hero.lead">Estrategia, creatividad y datos para hacer crecer tu marca en cualquier idioma y en cualquier mercado.</p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--green magnetic"><span data-i18n="hero.cta1">Empezar un proyecto</span> <i class="arrow">→</i></a>
+          <a href="#trabajos" class="btn btn--ghost magnetic"><span data-i18n="hero.cta2">Ver trabajos</span></a>
+        </div>
+      </div>
+
+      <a href="#manifiesto" class="scroll-hint" aria-label="Scroll">
+        <svg viewBox="0 0 100 100" class="scroll-hint__ring" aria-hidden="true">
+          <defs><path id="circle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+          <text><textPath href="#circle" data-i18n="hero.scroll">scroll · descubrí más · scroll · descubrí más ·</textPath></text>
+        </svg>
+        <span class="scroll-hint__arrow">↓</span>
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee marquee--green" aria-hidden="true">
+      <div class="marquee__track" data-speed="1">
+        <div class="marquee__group">
+          <span data-i18n="mq.1">Estrategia</span><b>✺</b>
+          <span data-i18n="mq.2">Branding</span><b>✺</b>
+          <span data-i18n="mq.3">Redes sociales</span><b>✺</b>
+          <span data-i18n="mq.4">Performance</span><b>✺</b>
+          <span data-i18n="mq.5">Contenido</span><b>✺</b>
+          <span data-i18n="mq.6">Diseño web</span><b>✺</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="manifiesto">
+      <p class="eyebrow"><span class="dot"></span><span data-i18n="man.eyebrow">Manifiesto</span></p>
+      <p class="manifesto__text" data-i18n="man.text" data-split>Creemos que el buen marketing no grita: conecta. Unimos estrategia y creatividad para contar historias que cruzan fronteras, hablan tu idioma y convierten audiencias en comunidades.</p>
+    </section>
+
+    <!-- SERVICES (stacking cards) -->
+    <section class="services" id="servicios">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span><span data-i18n="srv.eyebrow">Servicios</span></p>
+        <h2 class="h2 reveal-up" data-i18n="srv.title">Todo lo que tu marca necesita, en un solo lugar.</h2>
+      </div>
+
+      <div class="stack">
+        <article class="card card--pink">
+          <span class="card__num">01</span>
+          <div class="card__body">
+            <h3 data-i18n="srv.1.t">Estrategia de marca</h3>
+            <p data-i18n="srv.1.d">Investigación, posicionamiento y un plan claro para llegar a la audiencia correcta en cada mercado.</p>
+            <ul class="tags"><li data-i18n="srv.1.a">Research</li><li data-i18n="srv.1.b">Posicionamiento</li><li data-i18n="srv.1.c">Go-to-market</li></ul>
+          </div>
+          <div class="card__art art-1" aria-hidden="true"><i></i><i></i><i></i></div>
+        </article>
+
+        <article class="card card--green">
+          <span class="card__num">02</span>
+          <div class="card__body">
+            <h3 data-i18n="srv.2.t">Branding e identidad</h3>
+            <p data-i18n="srv.2.d">Logos, sistemas visuales y tono de voz que hacen que tu marca sea imposible de olvidar.</p>
+            <ul class="tags"><li data-i18n="srv.2.a">Identidad visual</li><li data-i18n="srv.2.b">Naming</li><li data-i18n="srv.2.c">Tono de voz</li></ul>
+          </div>
+          <div class="card__art art-2" aria-hidden="true"><i></i><i></i></div>
+        </article>
+
+        <article class="card card--dark">
+          <span class="card__num">03</span>
+          <div class="card__body">
+            <h3 data-i18n="srv.3.t">Redes sociales y contenido</h3>
+            <p data-i18n="srv.3.d">Contenido bilingüe que la gente quiere ver, guardar y compartir. Gestión de comunidad incluida.</p>
+            <ul class="tags"><li>Instagram</li><li>TikTok</li><li>LinkedIn</li></ul>
+          </div>
+          <div class="card__art art-3" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </article>
+
+        <article class="card card--cream">
+          <span class="card__num">04</span>
+          <div class="card__body">
+            <h3 data-i18n="srv.4.t">Performance y ads</h3>
+            <p data-i18n="srv.4.d">Campañas en Meta, Google y TikTok optimizadas con datos para que cada peso, dólar o euro rinda más.</p>
+            <ul class="tags"><li>Meta Ads</li><li>Google Ads</li><li data-i18n="srv.4.c">Analítica</li></ul>
+          </div>
+          <div class="card__art art-4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+
+        <article class="card card--pink">
+          <span class="card__num">05</span>
+          <div class="card__body">
+            <h3 data-i18n="srv.5.t">Diseño y desarrollo web</h3>
+            <p data-i18n="srv.5.d">Sitios rápidos, animados y pensados para convertir, en uno o varios idiomas.</p>
+            <ul class="tags"><li>UX / UI</li><li data-i18n="srv.5.b">Landing pages</li><li>SEO</li></ul>
+          </div>
+          <div class="card__art art-5" aria-hidden="true"><i></i><i></i><i></i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS (horizontal scroll on desktop) -->
+    <section class="process" id="proceso">
+      <div class="process__pin">
+        <div class="process__head">
+          <p class="eyebrow eyebrow--light"><span class="dot"></span><span data-i18n="pro.eyebrow">Cómo trabajamos</span></p>
+          <h2 class="h2" data-i18n="pro.title">Un proceso simple. Resultados que se notan.</h2>
+        </div>
+        <div class="process__track">
+          <div class="step"><span class="step__n">01</span><h3 data-i18n="pro.1.t">Escuchamos</h3><p data-i18n="pro.1.d">Conocemos tu marca, tus objetivos y a tu audiencia en cada país.</p></div>
+          <div class="step"><span class="step__n">02</span><h3 data-i18n="pro.2.t">Planificamos</h3><p data-i18n="pro.2.d">Definimos estrategia, canales, mensajes y métricas de éxito.</p></div>
+          <div class="step"><span class="step__n">03</span><h3 data-i18n="pro.3.t">Creamos</h3><p data-i18n="pro.3.d">Diseñamos y producimos contenido y campañas en español e inglés.</p></div>
+          <div class="step"><span class="step__n">04</span><h3 data-i18n="pro.4.t">Lanzamos</h3><p data-i18n="pro.4.d">Publicamos, medimos en tiempo real y ajustamos lo necesario.</p></div>
+          <div class="step"><span class="step__n">05</span><h3 data-i18n="pro.5.t">Crecemos</h3><p data-i18n="pro.5.d">Reportes claros y nuevas ideas para escalar mes a mes.</p></div>
+        </div>
+        <div class="process__bar"><span></span></div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="trabajos">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="work.eyebrow">Trabajos seleccionados</span></p>
+          <h2 class="h2 reveal-up" data-i18n="work.title">Ideas que se convierten en resultados.</h2>
+        </div>
+      </div>
+
+      <div class="work__grid">
+        <a href="#contacto" class="project" data-cursor>
+          <div class="project__media pm-1"><span class="pm-word">Bloom</span><i></i><i></i></div>
+          <div class="project__meta"><h3>Bloom Skincare</h3><span data-i18n="work.1">Branding · Redes</span></div>
+        </a>
+        <a href="#contacto" class="project project--offset" data-cursor>
+          <div class="project__media pm-2"><span class="pm-word">Norte</span><i></i></div>
+          <div class="project__meta"><h3>Norte Café</h3><span data-i18n="work.2">Estrategia · Contenido</span></div>
+        </a>
+        <a href="#contacto" class="project" data-cursor>
+          <div class="project__media pm-3"><span class="pm-word">Vela</span><i></i><i></i><i></i></div>
+          <div class="project__meta"><h3>Vela Studio</h3><span data-i18n="work.3">Web · Performance</span></div>
+        </a>
+        <a href="#contacto" class="project project--offset" data-cursor>
+          <div class="project__media pm-4"><span class="pm-word">Olivo</span><i></i></div>
+          <div class="project__meta"><h3>Olivo Market</h3><span data-i18n="work.4">Lanzamiento · Ads</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="nosotros">
+      <div class="stats__intro">
+        <p class="eyebrow"><span class="dot"></span><span data-i18n="about.eyebrow">Nosotros</span></p>
+        <h2 class="h2 reveal-up" data-i18n="about.title">Una agencia, dos idiomas, un mundo de audiencias.</h2>
+        <p class="stats__lead reveal-up" data-i18n="about.lead">Somos un equipo creativo y estratégico que trabaja con marcas de Latinoamérica, Estados Unidos y Europa. Pensamos local, comunicamos global.</p>
+      </div>
+      <div class="stats__grid">
+        <div class="stat"><span class="stat__num" data-count="2">0</span><span class="stat__label" data-i18n="stat.1">idiomas nativos</span></div>
+        <div class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label" data-i18n="stat.2">continentes</span></div>
+        <div class="stat"><span class="stat__num" data-count="24" data-suffix="h">0</span><span class="stat__label" data-i18n="stat.3">tiempo de respuesta</span></div>
+        <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label" data-i18n="stat.4">enfoque en resultados</span></div>
+      </div>
+    </section>
+
+    <!-- HELLO / HOLA -->
+    <section class="hello" aria-hidden="true">
+      <div class="marquee marquee--big">
+        <div class="marquee__track" data-speed="-0.6">
+          <div class="marquee__group">
+            <span>Hola</span><b class="hello__logo"></b><span class="outline">Hello</span><b class="hello__logo"></b>
+            <span>Hola</span><b class="hello__logo"></b><span class="outline">Hello</span><b class="hello__logo"></b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contacto">
+      <div class="contact__left">
+        <p class="eyebrow eyebrow--light"><span class="dot"></span><span data-i18n="ct.eyebrow">Contacto</span></p>
+        <h2 class="contact__title">
+          <span class="line"><span class="line__inner reveal-line" data-i18n="ct.l1">¿Tenés una idea?</span></span>
+          <span class="line"><span class="line__inner reveal-line accent" data-i18n="ct.l2">Hagámosla crecer.</span></span>
+        </h2>
+        <a href="mailto:hola@clabel.agency" class="contact__mail magnetic">hola@clabel.agency <i class="arrow">↗</i></a>
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+        <label class="field"><input type="text" name="name" required placeholder=" "><span data-i18n="ct.name">Tu nombre</span></label>
+        <label class="field"><input type="email" name="email" required placeholder=" "><span data-i18n="ct.email">Tu email</span></label>
+        <fieldset class="chips">
+          <legend data-i18n="ct.need">¿Qué necesitás?</legend>
+          <label><input type="checkbox" name="need" value="Branding"><span>Branding</span></label>
+          <label><input type="checkbox" name="need" value="Social"><span data-i18n="mq.3">Redes sociales</span></label>
+          <label><input type="checkbox" name="need" value="Ads"><span>Ads</span></label>
+          <label><input type="checkbox" name="need" value="Web"><span>Web</span></label>
+          <label><input type="checkbox" name="need" value="Strategy"><span data-i18n="mq.1">Estrategia</span></label>
+        </fieldset>
+        <label class="field"><textarea name="message" rows="3" required placeholder=" "></textarea><span data-i18n="ct.msg">Contanos sobre tu proyecto</span></label>
+        <button type="submit" class="btn btn--pink btn--lg magnetic"><span data-i18n="ct.send">Enviar mensaje</span> <i class="arrow">→</i></button>
+        <p class="form__note" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__tag" data-i18n="ft.tag">Marketing con alma, en dos idiomas.</p>
+      <ul class="footer__social">
+        <li><a href="#" class="magnetic">Instagram</a></li>
+        <li><a href="#" class="magnetic">LinkedIn</a></li>
+        <li><a href="#" class="magnetic">TikTok</a></li>
+        <li><a href="#" class="magnetic">Behance</a></li>
+      </ul>
+    </div>
+    <div class="footer__logo"><img src="assets/logo-green.png" alt="clabel"></div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> clabel</span>
+      <span data-i18n="ft.rights">Todos los derechos reservados</span>
+      <a href="#top" class="totop" data-i18n="ft.top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
