@@ -7,7 +7,7 @@ window.I18N = {
     "nav.process": "Proceso",
     "nav.work": "Trabajos",
     "nav.about": "Nosotros",
-    "nav.cta": "Hablemos",
+    "nav.cta": "Contactanos",
 
     "hero.eyebrow": "Agencia de marketing · ES / EN",
     "hero.l1": "Hacemos marcas",
@@ -99,7 +99,7 @@ window.I18N = {
     "nav.process": "Process",
     "nav.work": "Work",
     "nav.about": "About",
-    "nav.cta": "Let's talk",
+    "nav.cta": "Contact us",
 
     "hero.eyebrow": "Marketing agency · EN / ES",
     "hero.l1": "We build brands",
